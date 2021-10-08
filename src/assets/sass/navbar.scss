@@ -1,0 +1,138 @@
+.navbar {
+  width: 100%;
+  height: 100px;
+  background-color: $light-grey;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+
+  &__img {
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+
+    img {
+      height: 100%;
+    }
+  }
+
+  .burger {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    @include flexEvenly;
+    flex-direction: column;
+
+    &__line {
+      width: 100%;
+      height: 3px;
+      background-color: $black;
+      transition: 300ms;
+    }
+
+    .line2 {
+      opacity: 1;
+    }
+  }
+
+  &__menu {
+    width: 100%;
+    position: absolute;
+    top: 98px;
+    height: 0vh;
+    @include flexEvenly;
+    flex-direction: column;
+    background-color: inherit;
+    font-size: 1.2rem;
+    transition: 300ms;
+
+    li {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  }
+
+  &.active {
+    .navbar__menu {
+      height: 25vh;
+
+      li {
+        transform: translate(0);
+        opacity: 1;
+      }
+    }
+
+    .burger {
+      .line1 {
+        transform: rotate(45deg) translate(7px, 8px);
+      }
+
+      .line2 {
+        transform: translateX(20px);
+        opacity: 0;
+      }
+
+      .line3 {
+        transform: rotate(-45deg) translate(7px, -8px);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .burger {
+      display: none;
+    }
+
+    &__img {
+      position: static;
+      transform: translate(0);
+    }
+
+    &__menu {
+      flex-direction: row;
+      transform: translate(0);
+      position: static;
+      height: 100%;
+      width: 60%;
+      li {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  }
+
+  .navbar.active {
+    .navbar__menu {
+      height: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .navbar {
+    &__menu {
+      width: 50%;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .navbar {
+    &__menu {
+      width: 50%;
+      font-size: 1.2rem;
+    }
+  }
+}

@@ -1,0 +1,351 @@
+.wrapper {
+  width: 100%;
+}
+
+.header {
+  margin-top: 100px;
+
+  &__img {
+    display: none;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.header.header-home {
+  width: 100%;
+  height: 60vh;
+  @include flexCenter;
+  text-align: center;
+  background: black;
+  position: relative;
+
+  .header__desc {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+  //for desktop
+  // .typewriter span {
+  //   overflow: hidden; /* Ensures the content is not revealed until the animation */
+  //   border-right: 0.15em solid orange; /* The typwriter cursor */
+  //   white-space: nowrap; /* Keeps the content on a single line */
+  //   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  //   letter-spacing: 0.15em; /* Adjust as needed */
+  //   animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  // }
+
+  // /* The typing effect */
+  // @keyframes typing {
+  //   from {
+  //     width: 0;
+  //   }
+  //   to {
+  //     width: 100%;
+  //   }
+  // }
+
+  // /* The typewriter cursor effect */
+  // @keyframes blink-caret {
+  //   from,
+  //   to {
+  //     border-color: transparent;
+  //   }
+  //   50% {
+  //     border-color: orange;
+  //   }
+  // }
+
+  p:nth-child(3) {
+    margin-bottom: 20px;
+  }
+  button {
+    width: 100%;
+    background-color: $accent-light;
+    color: $white;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 15px;
+    z-index: 100000;
+  }
+}
+
+.header.header-short,
+.header.header-long {
+  width: 100%;
+  height: 60vh;
+  @include flexCenter;
+  flex-direction: column;
+  background-size: cover;
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    width: 80%;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+}
+
+.header.header-short {
+  background: url('../img/courses header.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.bg-partner {
+  background: url('../img/partner header.jpg') no-repeat center center;
+}
+
+.bg-team {
+  background: url('../img/career header.jpg') no-repeat center center;
+}
+
+.bg-about {
+  background: url('../img/about us header.jpg') no-repeat center center;
+}
+
+.bg-contact {
+  background: url('../img/contact header.jpg') no-repeat center center;
+}
+
+.section {
+  margin: 40px 0;
+  &__head {
+    margin: 40px;
+  }
+
+  &__line {
+    width: 180px;
+    height: 3px;
+    background-color: $accent-dark;
+    margin-inline: auto;
+    border-radius: 30px;
+  }
+
+  &__wrapper {
+    margin-inline: auto;
+    width: 90%;
+    text-align: center;
+  }
+
+  &__img {
+    width: 90%;
+    margin-inline: auto;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__ul {
+    text-align: start;
+
+    li {
+      margin: 10px 0;
+    }
+  }
+
+  &__partners {
+    padding: 10px 0 20px 0;
+
+    .partner {
+      margin: 20px auto;
+      width: 50%;
+    }
+  }
+
+  &__header-padding {
+    padding-top: 20px;
+  }
+
+  .mission {
+    color: $black;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  &__img {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .section {
+    &__img {
+      width: 30%;
+      margin: 0;
+    }
+
+    &__partners {
+      @include flexEvenly;
+      flex-wrap: wrap;
+      .partner {
+        width: 40%;
+      }
+    }
+
+    .mission {
+      width: 60ch;
+      margin-inline: auto;
+      font-weight: 500;
+    }
+  }
+  .section.blocks {
+    @include flexCenter;
+    width: 90%;
+    margin: 20px auto !important;
+    gap: 20px;
+
+    .block {
+      width: 50%;
+      margin: 40px 0;
+      min-height: 430px;
+
+      p {
+        text-align: start;
+        font-size: 1.1rem;
+        line-height: 1.5;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .blocks .section__head {
+    h2 {
+      text-align: start;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .header.header.header-home {
+    @include flexEvenly;
+    height: 80vh;
+
+    .header__desc {
+      width: 50%;
+    }
+
+    .header__img {
+      display: block;
+      width: 40%;
+    }
+
+    button {
+      width: auto;
+      padding: 15px 35px;
+    }
+  }
+
+  .header {
+    h2 {
+      font-size: 2.8rem !important;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1rem !important;
+    }
+  }
+
+  .header.header-short {
+    height: 40vh;
+  }
+
+  .header.header-long {
+    height: 55vh;
+  }
+
+  .section {
+    margin-bottom: 80px;
+    &__wrapper {
+      width: 75%;
+    }
+
+    &__partners {
+      padding: 100px 0;
+      .partner {
+        width: 30%;
+      }
+    }
+
+    &__careers {
+      @include flexEvenly;
+      flex-wrap: wrap;
+
+      .career {
+        width: 45%;
+        min-height: 420px;
+      }
+    }
+
+    &__header-padding {
+      font-size: 2.5rem;
+    }
+
+    .mission {
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .section {
+    &__img {
+      width: 25%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .header.header-home {
+    h1 {
+      font-size: 3.2rem;
+    }
+
+    P {
+      font-size: 1.2rem;
+    }
+  }
+
+  .header {
+    h2 {
+      font-size: 4rem !important;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem !important;
+    }
+  }
+
+  .section.blocks {
+    width: 75%;
+    margin: 80px auto !important;
+  }
+  .section {
+    &__img {
+      width: 25%;
+    }
+
+    &__desc {
+      width: 60%;
+      margin-inline: auto;
+    }
+
+    &__partners {
+      width: 85%;
+      margin-inline: auto;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.questions {
+  @include flexCenter;
+  flex-direction: column;
+
+  p {
+    margin: 30px 0;
+  }
+
+  button {
+    padding: 15px 25px;
+    border: 2px solid $white;
+    color: $white;
+    background: transparent;
+    margin: 10px 0 20px 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .questions {
+    height: 55vh;
+
+    p {
+      width: 60ch;
+      margin-inline: auto;
+    }
+
+    button {
+      font-size: 1.1rem;
+      padding: 15px 35px;
+    }
+  }
+}
