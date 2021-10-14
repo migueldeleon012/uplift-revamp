@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .testimonial {
   width: 80%;
   margin: 30px auto;
@@ -39,3 +40,46 @@
     }
   }
 }
+=======
+.testimonial {
+  width: 80%;
+  margin: 30px auto;
+
+  &__img {
+    width: 100px;
+    aspect-ratio: 1/1;
+    background-color: darken($light-grey, 20%);
+    margin: 20px auto;
+    border-radius: 50%;
+  }
+
+  &__stars {
+    width: 40%;
+    margin: 0 auto 20px auto;
+  }
+
+  p {
+    margin-top: 15px;
+  }
+}
+
+@media only screen and(min-width: 768px) {
+  .testimonials {
+    @include flexEvenly;
+    flex-wrap: wrap;
+
+    .testimonial {
+      width: 40%;
+    }
+  }
+}
+
+@media only screen and(min-width: 1024px) {
+  .testimonials {
+    .testimonial {
+      width: 30%;
+      min-height: 420px;
+    }
+  }
+}
+>>>>>>> 0583b9446a832e9f41c76dffb5e57d74693b6320

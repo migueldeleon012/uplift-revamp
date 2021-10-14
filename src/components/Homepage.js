@@ -14,8 +14,30 @@ const Homepage = () => {
   return (
     <div className="wrapper">
       <header className="header header-home">
+<<<<<<< HEAD
         <Particles
           canvasClassName="particle"
+=======
+        <div className="header__desc">
+          <div className="typewriter">
+            <h1 className="color-white">Become a Software Developer</h1>
+          </div>
+
+          <p className="color-white">
+            Affordable, high-quality software development courses.{' '}
+          </p>
+          <p className="color-white">Study part-time. Learn full-stack.</p>
+
+          <Link to="/courses">
+            <button>Get Started</button>
+          </Link>
+        </div>
+        <div className="header__img">
+          <img src="img/macbook.png" alt="" />
+        </div>
+        <Particles
+          className="particle"
+>>>>>>> 0583b9446a832e9f41c76dffb5e57d74693b6320
           params={{
             particles: {
               number: {
@@ -27,6 +49,7 @@ const Homepage = () => {
             },
           }}
         />
+<<<<<<< HEAD
         <div className="header__wrapper">
           <div className="header__desc">
             <div className="typewriter">
@@ -46,6 +69,8 @@ const Homepage = () => {
             <img src="img/macbook.png" alt="" />
           </div>
         </div>
+=======
+>>>>>>> 0583b9446a832e9f41c76dffb5e57d74693b6320
       </header>
 
       <section className="section">
@@ -74,7 +99,11 @@ const Homepage = () => {
         </div>
 
         <div className="section__wrapper cards">
+<<<<<<< HEAD
           <Link className="card card-normal" to="/courses">
+=======
+          <div className="card card-normal">
+>>>>>>> 0583b9446a832e9f41c76dffb5e57d74693b6320
             <div className="card__img">
               <img src="img/landing page card 1.jpg" alt="web development" />
             </div>
@@ -82,9 +111,15 @@ const Homepage = () => {
               <h3 className="color-accent-light">Full Stack Web Development</h3>
               <p>Available online</p>
             </div>
+<<<<<<< HEAD
           </Link>
 
           <Link className="card card-normal" to="/courses">
+=======
+          </div>
+
+          <div className="card card-normal">
+>>>>>>> 0583b9446a832e9f41c76dffb5e57d74693b6320
             <div className="card__img">
               <img src="img/landing page card 2.jpg" alt="short courses" />
             </div>
@@ -92,9 +127,15 @@ const Homepage = () => {
               <h3 className="color-accent-light">Short Courses</h3>
               <p>Taught on Weekends</p>
             </div>
+<<<<<<< HEAD
           </Link>
 
           <Link className="card card-normal" to="/partners">
+=======
+          </div>
+
+          <div className="card card-normal">
+>>>>>>> 0583b9446a832e9f41c76dffb5e57d74693b6320
             <div className="card__img">
               <img src="img/landing page card 3.jpg" alt="partnerships" />
             </div>
@@ -102,7 +143,11 @@ const Homepage = () => {
               <h3 className="color-accent-light">Company Partnership</h3>
               <p>Hire our best grads</p>
             </div>
+<<<<<<< HEAD
           </Link>
+=======
+          </div>
+>>>>>>> 0583b9446a832e9f41c76dffb5e57d74693b6320
         </div>
       </section>
 

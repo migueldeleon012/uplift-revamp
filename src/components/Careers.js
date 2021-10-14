@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircle } from '@fortawesome/free-solid-svg-icons';
+
+>>>>>>> 0583b9446a832e9f41c76dffb5e57d74693b6320
 const Careers = () => {
   return (
     <div>
@@ -30,6 +36,7 @@ const Careers = () => {
               <h3>We are looking for:</h3>
               <ul className="section__ul">
                 <li>
+<<<<<<< HEAD
                   <span>• </span>
                   <p>Full-time Teaching Partners</p>
                 </li>
@@ -40,6 +47,27 @@ const Careers = () => {
                 <li>
                   <span>• </span>
                   <p>Teaching Assistants</p>
+=======
+                  <FontAwesomeIcon
+                    icon={faCircle}
+                    className="font-awesome-circle"
+                  />{' '}
+                  Full-time Teaching Partners
+                </li>
+                <li>
+                  <FontAwesomeIcon
+                    icon={faCircle}
+                    className="font-awesome-circle"
+                  />{' '}
+                  Part-time Teaching Partners
+                </li>
+                <li>
+                  <FontAwesomeIcon
+                    icon={faCircle}
+                    className="font-awesome-circle"
+                  />{' '}
+                  Teaching Assistants
+>>>>>>> 0583b9446a832e9f41c76dffb5e57d74693b6320
                 </li>
               </ul>
 
@@ -57,6 +85,7 @@ const Careers = () => {
             <div className="section__wrapper">
               <ul className="section__ul">
                 <li>
+<<<<<<< HEAD
                   <span>• </span>
                   <p>
                     Experience on web development, converting UI/UX designs to
@@ -83,6 +112,38 @@ const Careers = () => {
                     Capability to motivate learning and share your knowledge
                     with empathy and adaptive/effective teaching styles
                   </p>
+=======
+                  <FontAwesomeIcon
+                    icon={faCircle}
+                    className="font-awesome-circle"
+                  />{' '}
+                  Experience on web development, converting UI/UX designs to
+                  user-centric, responsive and interactive websites
+                </li>
+                <li>
+                  <FontAwesomeIcon
+                    icon={faCircle}
+                    className="font-awesome-circle"
+                  />{' '}
+                  Hands on experience in different noSQL and SQL databases,
+                  RESTful APIs, unit testing
+                </li>
+                <li>
+                  <FontAwesomeIcon
+                    icon={faCircle}
+                    className="font-awesome-circle"
+                  />{' '}
+                  Proficient in HTML, CSS, and either or both JS (React and
+                  nodeJS) and PHP (Laravel)
+                </li>
+                <li>
+                  <FontAwesomeIcon
+                    icon={faCircle}
+                    className="font-awesome-circle"
+                  />{' '}
+                  Capability to motivate learning and share your knowledge with
+                  empathy and adaptive/effective teaching styles
+>>>>>>> 0583b9446a832e9f41c76dffb5e57d74693b6320
                 </li>
               </ul>
             </div>

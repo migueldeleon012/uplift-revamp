@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .form {
   @include flexEvenly;
   flex-direction: column;
@@ -48,3 +49,52 @@
     }
   }
 }
+=======
+.form {
+  @include flexEvenly;
+  flex-direction: column;
+
+  input,
+  select,
+  textarea {
+    width: 80%;
+    margin: 5px 0;
+    padding: 3px;
+    border: 1px solid $dark-grey;
+    &:hover {
+      border: 1px solid $accent-dark;
+    }
+  }
+
+  textarea {
+    resize: none;
+  }
+}
+
+.border-red {
+  border: 1px solid red !important;
+}
+
+@media only screen and(min-width: 768px) {
+  .form {
+    margin: 40px;
+
+    input,
+    select,
+    textarea {
+      padding: 10px 14px;
+      font-size: 1rem;
+      border-radius: 10px;
+    }
+  }
+
+  button {
+    background-color: $accent-dark;
+    color: $white;
+    padding: 10px 25px;
+    border: none;
+    margin-top: 15px;
+    border-radius: 10px;
+  }
+}
+>>>>>>> 0583b9446a832e9f41c76dffb5e57d74693b6320

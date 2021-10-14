@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .team {
   text-align: start;
   margin: 40px 0;
@@ -87,3 +88,90 @@
     }
   }
 }
+=======
+.team {
+  text-align: start;
+  margin: 40px 0;
+
+  h4 {
+    font-size: 1.1rem;
+    letter-spacing: 0.7px;
+    margin: 0;
+  }
+
+  span {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  &__img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: $dark-grey;
+    margin: 20px 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .team {
+    &__member {
+      @include flexCenter;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 20px;
+      min-height: 300px;
+      margin: 40px 0;
+    }
+
+    &__member:nth-child(even) {
+      .team__img {
+        order: 2;
+      }
+    }
+
+    &__img {
+      width: 35%;
+    }
+
+    &__description {
+      width: 60%;
+      margin: 20px 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .team {
+    &__member {
+      width: 80%;
+      margin-inline: auto;
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .team {
+    &__member {
+      width: 980px;
+    }
+
+    &__description {
+      width: 50%;
+      h4 {
+        font-size: 1.6rem;
+      }
+
+      span {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+>>>>>>> 0583b9446a832e9f41c76dffb5e57d74693b6320

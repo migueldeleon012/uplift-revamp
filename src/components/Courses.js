@@ -16,7 +16,11 @@ const Courses = () => {
         </div>
 
         <section className="section__wrapper">
+<<<<<<< HEAD
           <div className="card border-top-accent">
+=======
+          <div className="card">
+>>>>>>> 0583b9446a832e9f41c76dffb5e57d74693b6320
             <div className="course">
               <div className="course__name">
                 <h4>MERN Stack Bootcamp Summary</h4>
@@ -59,7 +63,11 @@ const Courses = () => {
               </div>
             </div>
           </div>
+<<<<<<< HEAD
           <div className="card border-top-accent">
+=======
+          <div className="card">
+>>>>>>> 0583b9446a832e9f41c76dffb5e57d74693b6320
             <div className="course">
               <div className="course__name">
                 <h4>PHP 7 + Laravel 8 Course Summary</h4>
@@ -120,6 +128,7 @@ const Courses = () => {
             courses?
           </h2>
           <div className="course__circles">
+<<<<<<< HEAD
             <span className="circle">
               <img src="img/html.svg" alt="HTML" />
             </span>
@@ -144,6 +153,16 @@ const Courses = () => {
             <span className="circle">
               <img src="img/mongodb.svg" alt="Mongodb" />
             </span>
+=======
+            <span className="circle">HTML</span>
+            <span className="circle">CSS</span>
+            <span className="circle">Git</span>
+            <span className="circle">JavaScript</span>
+            <span className="circle">Express</span>
+            <span className="circle">MongoDB</span>
+            <span className="circle">Node</span>
+            <span className="circle">React</span>
+>>>>>>> 0583b9446a832e9f41c76dffb5e57d74693b6320
           </div>
         </div>
         <div className="section__wrapper block">

@@ -19,6 +19,7 @@ const Partners = () => {
           <div className="section__wrapper">
             <ul className="section__ul">
               <li>
+<<<<<<< HEAD
                 <span>• </span>
                 <p>
                   Work with real developers and engineering leads who very well
@@ -37,6 +38,17 @@ const Partners = () => {
                   Quantitative and qualitative measures in place to keep us on
                   track.
                 </p>
+=======
+                • Work with real developers and engineering leads who very well
+                know what skills software engineers should have.
+              </li>
+              <li>
+                • Agile and adaptable, we believe in continuous improvement.
+              </li>
+              <li>
+                • Quantitative and qualitative measures in place to keep us on
+                track.
+>>>>>>> 0583b9446a832e9f41c76dffb5e57d74693b6320
               </li>
             </ul>
           </div>
