@@ -1,0 +1,332 @@
+.wrapper {
+  width: 100%;
+}
+
+.header {
+  margin-top: 60px;
+
+  &__img {
+    display: none;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.header.header-home {
+  width: 100%;
+  height: 60vh;
+  @include flexCenter;
+  text-align: center;
+  background: black;
+  position: relative;
+
+  .header__wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .header__desc {
+    width: 90%;
+    margin-inline: auto;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+
+  p:nth-child(3) {
+    margin-bottom: 20px;
+  }
+  button {
+    width: 100%;
+    background-color: $accent-light;
+    color: $white;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 15px;
+    z-index: 100000;
+  }
+}
+
+.header.header-short,
+.header.header-long {
+  width: 100%;
+  height: 60vh;
+  @include flexCenter;
+  flex-direction: column;
+  background-size: cover;
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    width: 80%;
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+
+.header.header-short {
+  background: url('../img/courses header.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.bg-partner {
+  background: url('../img/partner header.jpg') no-repeat center center;
+}
+
+.bg-team {
+  background: url('../img/career header.jpg') no-repeat center center;
+}
+
+.bg-about {
+  background: url('../img/about us header.jpg') no-repeat center center;
+}
+
+.bg-contact {
+  background: url('../img/contact header.jpg') no-repeat center center;
+}
+
+.section {
+  margin: 40px 0;
+  &__head {
+    margin: 40px;
+  }
+
+  &__line {
+    width: 180px;
+    height: 3px;
+    background-color: $accent-dark;
+    margin-inline: auto;
+    border-radius: 30px;
+  }
+
+  &__wrapper {
+    margin-inline: auto;
+    width: 90%;
+    text-align: center;
+  }
+
+  &__img {
+    width: 75%;
+    margin-inline: auto;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__ul {
+    text-align: start;
+
+    li {
+      margin: 10px 0;
+      display: flex;
+      gap: 10px;
+    }
+  }
+
+  &__partners {
+    padding: 10px 0 20px 0;
+
+    .partner {
+      margin: 20px auto;
+      width: 50%;
+    }
+  }
+
+  &__header-padding {
+    padding-top: 20px;
+  }
+
+  .mission {
+    color: $black;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  &__img {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .section {
+    &__img {
+      width: 30%;
+      margin: 0;
+    }
+
+    &__partners {
+      @include flexEvenly;
+      flex-wrap: wrap;
+      .partner {
+        width: 40%;
+      }
+    }
+
+    .mission {
+      width: 60ch;
+      margin-inline: auto;
+      font-weight: 500;
+    }
+  }
+  .section.blocks {
+    @include flexCenter;
+    width: 90%;
+    margin: 20px auto !important;
+    gap: 20px;
+
+    .block {
+      width: 50%;
+      margin: 40px 0;
+      min-height: 500px;
+
+      p {
+        text-align: start;
+        font-size: 1.1rem;
+        line-height: 1.5;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .blocks .section__head {
+    h2 {
+      text-align: start;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .header.header.header-home {
+    height: 80vh;
+    .header__wrapper {
+      @include flexEvenly;
+    }
+
+    .header__desc {
+      width: 50%;
+    }
+
+    .header__img {
+      display: block;
+      width: 40%;
+    }
+
+    button {
+      width: auto;
+      padding: 15px 35px;
+    }
+  }
+
+  .header {
+    h2 {
+      font-size: 2.8rem !important;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1rem !important;
+    }
+  }
+
+  .header.header-short {
+    height: 40vh;
+  }
+
+  .header.header-long {
+    height: 55vh;
+  }
+
+  .section {
+    margin-bottom: 80px;
+    &__wrapper {
+      width: 75%;
+    }
+
+    &__partners {
+      padding: 100px 0;
+      .partner {
+        width: 30%;
+      }
+    }
+
+    &__careers {
+      @include flexEvenly;
+      flex-wrap: wrap;
+
+      .career {
+        width: 45%;
+        min-height: 420px;
+      }
+    }
+
+    &__header-padding {
+      font-size: 2.5rem;
+    }
+
+    .mission {
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .section {
+    &__img {
+      width: 25%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .header.header-home {
+    h1 {
+      font-size: 3.2rem;
+    }
+
+    P {
+      font-size: 1.2rem;
+    }
+  }
+
+  .header {
+    h2 {
+      font-size: 4rem !important;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem !important;
+    }
+  }
+
+  .section.blocks {
+    width: 75%;
+    margin: 80px auto !important;
+  }
+  .section {
+    &__img {
+      width: 25%;
+    }
+
+    &__desc {
+      width: 60%;
+      margin-inline: auto;
+    }
+
+    &__partners {
+      width: 85%;
+      margin-inline: auto;
+    }
+  }
+}

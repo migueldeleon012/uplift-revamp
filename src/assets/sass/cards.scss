@@ -1,0 +1,134 @@
+.card {
+  border: 1px solid $light-grey;
+  margin: 20px auto;
+
+  &__img {
+    background-color: $accent-dark;
+    img {
+      width: 100%;
+    }
+  }
+  &__desc {
+    padding: 20px;
+
+    p {
+      margin: 3px;
+      font-size: 1rem;
+    }
+  }
+}
+
+.card-partner {
+  width: 100%;
+}
+
+.card-long {
+  @include flexEvenly;
+  align-items: flex-start;
+  padding: 15px 10px;
+  text-align: start;
+
+  svg {
+    font-size: 2rem !important;
+    margin-right: 15px;
+    margin-top: 7px;
+  }
+}
+
+.cards {
+  width: 90%;
+  margin: 20px auto;
+}
+
+@media only screen and(min-width: 425px) {
+  .card-normal {
+    width: 80%;
+  }
+}
+
+@media only screen and(min-width: 768px) {
+  .cards {
+    @include flexEvenly;
+    flex-wrap: wrap;
+  }
+
+  .card-normal {
+    width: 40%;
+  }
+
+  .card-long {
+    width: 47%;
+    min-height: 20vh;
+    margin: 10px;
+  }
+
+  .card-partner {
+    width: 45%;
+    min-height: 450px;
+  }
+
+  .about {
+    width: 30%;
+    min-height: 180px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cards {
+    @include flexEvenly;
+    flex-wrap: wrap;
+    width: 75%;
+  }
+
+  .card-normal {
+    width: 30%;
+  }
+
+  .card-long {
+    width: 47%;
+    min-height: 180px;
+    margin: 10px;
+  }
+
+  .about {
+    min-height: 200px;
+
+    h3 {
+      font-size: 1.4rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .cards-long {
+    @include flexCenter;
+    gap: 10px;
+  }
+
+  .card-normal {
+    width: 25%;
+  }
+
+  .card-long {
+    width: 40%;
+  }
+
+  .card-partner {
+    min-height: 470px;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .cards {
+    width: 1440px;
+  }
+
+  .card-partner {
+    min-height: 520px;
+  }
+}
